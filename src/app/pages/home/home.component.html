@@ -1,6 +1,16 @@
-<app-add-article-button (addArticleEvent)="addArticle()"/>
+<app-add-article-button (addArticleEvent)="openModal()"/>
 <main>
-  <app-article *ngFor="let article of articles" [article]="article" (editArticleEvent)="editArticle()"/>
+  <app-article *ngFor="let article of articles"
+               [article]="article"
+               (editArticleEvent)="openEditArticleModal(article)"
+               (deleteArticleEvent)="onDeleteArticle($event)"/>
 </main>
-<app-footer [page]="page" [pageSize]="pageSize" (nextPage)="nextPage()" (previousPage)="previousPage()"/>
-<app-modal [ngClass]="{'show-modal': showModal}" (closeEvent)="closeModal()"/>
+<app-footer [page]="page"
+            [pageSize]="pageSize"
+            (nextPage)="nextPage()"
+            (previousPage)="previousPage()"/>
+<app-modal [ngClass]="{'show-modal': showModal}"
+           [tempArticle]="tempArticle"
+           (addArticleEvent)="onAddArticle($event)"
+           (updateArticleEvent)="onUpdateArticle($event)"
+           (closeEvent)="closeModal()"/>

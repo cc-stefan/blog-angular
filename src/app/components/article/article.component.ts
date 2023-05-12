@@ -8,9 +8,14 @@ import {Article} from "../../../models/article";
 })
 export class ArticleComponent {
   @Input() article!: Article;
-  @Output() editArticleEvent = new EventEmitter<Article>();
+  @Output() editArticleEvent: EventEmitter<Article> = new EventEmitter<Article>();
+  @Output() deleteArticleEvent: EventEmitter<number> = new EventEmitter<number>();
 
-  onEditArticle() {
-    this.editArticleEvent.emit();
+  onEditArticle(): void {
+    this.editArticleEvent.emit(this.article);
+  }
+
+  onDeleteArticle(): void {
+    this.deleteArticleEvent.emit(this.article.id);
   }
 }

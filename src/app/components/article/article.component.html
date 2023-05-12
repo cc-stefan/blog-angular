@@ -9,7 +9,7 @@
   </ul>
   <div class="actions__container">
     <button type="button" class="actions__btn" (click)="onEditArticle()">Edit</button>
-    <button type="button" class="actions__btn">Delete</button>
+    <button type="button" class="actions__btn" (click)="onDeleteArticle()">Delete</button>
   </div>
   <img [attr.src]="article.imgUrl" [attr.alt]="article.title"/>
   <div class="content__container">

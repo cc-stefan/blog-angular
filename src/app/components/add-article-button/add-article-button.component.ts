@@ -6,9 +6,9 @@ import {Component, EventEmitter, Output} from '@angular/core';
   styleUrls: ['./add-article-button.component.css']
 })
 export class AddArticleButtonComponent {
-  @Output() addArticleEvent = new EventEmitter();
+  @Output() addArticleEvent: EventEmitter<void> = new EventEmitter<void>();
 
-  onAddArticle() {
+  onAddArticle(): void {
     this.addArticleEvent.emit();
   }
 }
