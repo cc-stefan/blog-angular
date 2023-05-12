@@ -10,6 +10,8 @@ import {HttpClientModule} from "@angular/common/http";
 import {NgOptimizedImage} from "@angular/common";
 import { FooterComponent } from './components/footer/footer.component';
 import { AddArticleButtonComponent } from './components/add-article-button/add-article-button.component';
+import { ModalComponent } from './components/modal/modal.component';
+import { ArticleComponent } from './components/article/article.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import { AddArticleButtonComponent } from './components/add-article-button/add-a
     MenuComponent,
     FooterComponent,
     AddArticleButtonComponent,
+    ModalComponent,
+    ArticleComponent,
   ],
   imports: [
     BrowserModule,

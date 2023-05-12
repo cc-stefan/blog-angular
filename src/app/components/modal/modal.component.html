@@ -1,0 +1,21 @@
+<div class="modal__overlay">
+  <div class="modal">
+    <div class="modal__content">
+      <h2 class="title">Add/Edit article</h2>
+      <div class="inputs__container">
+        <input type="text" class="input" placeholder="Please enter title">
+        <input type="text" class="input" placeholder="Please enter tag">
+        <input type="text" class="input" placeholder="Please enter author">
+        <input type="text" class="input" placeholder="Please enter date">
+        <input type="text" class="input" placeholder="Please enter image url">
+        <input type="text" class="input" placeholder="Please enter saying">
+      </div>
+      <textarea class="textarea" name="content" cols="28" rows="7"
+                placeholder="Please enter content"></textarea>
+      <div class="modal__buttons">
+        <button type="button" class="button" (click)="onClose()">Cancel</button>
+        <button type="button" class="button button--pink">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
