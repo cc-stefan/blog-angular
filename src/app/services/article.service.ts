@@ -15,6 +15,10 @@ export class ArticleService {
     return this.http.get('http://localhost:3000/articles') as Observable<Article[]>
   }
 
+  getArticle(id: number) {
+    return this.http.get(`http://localhost:3000/articles/${id}`) as Observable<Article>
+  }
+
   addArticle(article: Article): Observable<Article> {
     return this.http.post('http://localhost:3000/articles', article) as Observable<Article>
   }

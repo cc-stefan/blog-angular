@@ -5,7 +5,7 @@ import {DetailsComponent} from "./pages/details/details.component";
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
-  {path: 'details', component: DetailsComponent},
+  {path: 'articles/:id', component: DetailsComponent},
 ];
 
 @NgModule({

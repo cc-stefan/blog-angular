@@ -100,11 +100,10 @@ img {
 
 .info__container {
   list-style-type: none;
-  margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
-  margin-top: 30px;
+  margin: 30px 0 0 0;
 }
 
 .info__container--details {
@@ -281,9 +280,8 @@ img {
   line-height: 30px;
   background: var(--pink-color);
   padding: 105px;
-  margin-right: -105px;
-  margin-left: -105px;
   text-align: center;
+  margin: 75px -250px;
 }
 
 .spinner {

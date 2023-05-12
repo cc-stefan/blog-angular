@@ -13,6 +13,7 @@ import {AddArticleButtonComponent} from './components/add-article-button/add-art
 import {ModalComponent} from './components/modal/modal.component';
 import {ArticleComponent} from './components/article/article.component';
 import {FormsModule} from "@angular/forms";
+import { ArticleOneComponent } from './components/article-one/article-one.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import {FormsModule} from "@angular/forms";
     AddArticleButtonComponent,
     ModalComponent,
     ArticleComponent,
+    ArticleOneComponent,
   ],
   imports: [
     BrowserModule,

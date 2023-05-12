@@ -1,1 +1,5 @@
-<p>details works!</p>
+<main>
+  <app-article-one
+    [article]="article"/>
+</main>
+<app-footer [isOnReadOneArticlePage]="true" (previousPage)="onPreviousArticle()" (nextPage)="onNextArticle()"></app-footer>
